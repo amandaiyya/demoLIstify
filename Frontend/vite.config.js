@@ -14,7 +14,7 @@ export default defineConfig({
     },
     server: {
         proxy: {
-            '/api': 'http://localhost:8000',
+            '/api': 'https://todolistify-backend-0nws.onrender.com',
         },
     },
 });
