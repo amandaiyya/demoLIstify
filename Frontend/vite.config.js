@@ -12,9 +12,9 @@ export default defineConfig({
             },
         },
     },
-    server: {
-        proxy: {
-            '/api': 'https://demolistify.onrender.com',
-        },
-    },
+    // server: {
+    //     proxy: {
+    //         '/api': 'http://localhost:8000',
+    //     },
+    // },
 });
