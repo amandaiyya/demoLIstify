@@ -12,9 +12,9 @@ export default defineConfig({
             },
         },
     },
-    // server: {
-    //     proxy: {
-    //         '/api': 'http://localhost:8000',
-    //     },
-    // },
+    server: {
+        proxy: {
+            '/api': `${import.meta.env.VITE_BACKEND_URL}`,
+        },
+    },
 });
