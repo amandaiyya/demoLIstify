@@ -101,6 +101,7 @@ const loginUser = asyncHandler(async(req, res)=>{
     const option = {
         httpOnly: true,
         secure: true,
+        sameSite: "None"
     }
 
     const accessTokenMaxAge = parseExpiry(process.env.ACCESS_TOKEN_EXPIRY);
